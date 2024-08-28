@@ -1,0 +1,6 @@
+comb(sig, delay_obj, delay_time, fb_cf) {
+    tap = delay_obj.read(delay_time, interp="cubic");
+    combed = tap * fb_cf + sig;
+    delay_obj.write(combed);
+    return combed;
+}

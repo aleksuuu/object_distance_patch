@@ -1,0 +1,98 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 6,
+			"revision" : 4,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "dsp.gen",
+		"rect" : [ 910.0, 198.0, 976.0, 809.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
+		"boxes" : [ 			{
+				"box" : 				{
+					"code" : "require(\"allpass\")\nrequire(\"comb\")\n\nParam comb_fb_cf(0.87, min=0.0, max=0.99);\nParam all_pass_fb_cf(0.87, min=0.0, max=0.99);\n\nParam drywet(1, min=0.0, max=1.0);\n\nParam b1(0.78, min=0.0, max=0.99);\nParam b2(0.55, min=0.0, max=0.99);\nParam b3(0.035, min=0.0, max=0.99);\nParam b4(0.034, min=0.0, max=0.99);\n\n// Param d1(1710, min=0, max=44100);\n// Param d2(817, min=0, max=44100);\n// Param d3(904, min=0, max=44100);\n// Param d4(704, min=0, max=44100);\n// Param d5(659, min=0, max=44100);\n// Param d6(279, min=0, max=44100);\nParam d1(2741, min=0, max=44100);\nParam d2(2371, min=0, max=44100);\nParam d3(2029, min=0, max=44100);\nParam d4(1693, min=0, max=44100);\nParam d5(1361, min=0, max=44100);\nParam d6(1013, min=0, max=44100);\n\nDelay D1(d1);\nDelay D2(d2);\nDelay D3(d3);\nDelay D4(d4);\nDelay D5(d5);\nDelay D6(d6);\n\ncombed = comb(in1, D1, d1, comb_fb_cf) * b1 +\n        comb(in1, D2, d2, comb_fb_cf) * b2 +\n        comb(in1, D3, d3, comb_fb_cf) * b3 +\n        comb(in1, D4, d4, comb_fb_cf) * b4;\n\nall_passed_1 = allpass(combed, D5, d5, all_pass_fb_cf, 1);\n\nout1 = allpass(all_passed_1, D6, d6, all_pass_fb_cf, 1);",
+					"fontface" : 0,
+					"fontname" : "<Monospaced>",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "codebox",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 50.0, 50.0, 513.0, 193.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 50.0, 14.0, 28.0, 22.0 ],
+					"text" : "in 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 50.0, 259.0, 35.0, 22.0 ],
+					"text" : "out 1"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+ ],
+		"autosave" : 0
+	}
+
+}

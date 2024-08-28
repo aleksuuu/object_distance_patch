@@ -1,0 +1,12 @@
+allpass(sig, delay_obj, delay_time, fb_cf, fb) {
+    tap = delay_obj.read(delay_time, interp="cubic") * fb_cf;
+    if(fb) {
+        input_and_fb = tap + sig;
+        allpassed = tap - input_and_fb * fb_cf;
+        delay_obj.write(input_and_fb);
+        return allpassed;
+    }
+    allpassed = tap - sig;
+    delay_obj.write(sig);
+    return allpassed;
+}
