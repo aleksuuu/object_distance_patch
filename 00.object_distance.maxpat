@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 134.0, 100.0, 808.0, 809.0 ],
+		"rect" : [ 34.0, 100.0, 1444.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2390,7 +2390,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1297.999987065792084, 30.0, 45.0, 22.0 ],
-					"text" : "adc~ 3"
+					"text" : "adc~ 1"
 				}
 
 			}
@@ -2402,7 +2402,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1127.999987065792084, 30.0, 45.0, 22.0 ],
-					"text" : "adc~ 2"
+					"text" : "adc~ 1"
 				}
 
 			}
@@ -4042,42 +4042,42 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "allpass.genexpr",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "GenX",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ascending_scales.txt",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bad_reception.maxpat",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "comb.genexpr",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "GenX",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "delay_fb.maxpat",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "env_follower.maxpat",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -4088,77 +4088,77 @@
 			}
 , 			{
 				"name" : "glitchy_delay.maxpat",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pan2.maxpat",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pitch_detector.maxpat",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "schroeder.gendsp",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stutterer.gendsp",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "util.gatexf.maxpat",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "util.xfade.maxpat",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vox_accel.maxpat",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vox_sampler.maxpat",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vox_stacc.maxpat",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vox_sus.maxpat",
-				"bootpath" : "~/Music/Sibelius Scores/Scores/object_distance_patch",
+				"bootpath" : "~/Documents/GitHub/object_distance_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
