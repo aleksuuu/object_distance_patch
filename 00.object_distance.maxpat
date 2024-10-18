@@ -2390,7 +2390,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1297.999987065792084, 30.0, 45.0, 22.0 ],
-					"text" : "adc~ 1"
+					"text" : "adc~ 3"
 				}
 
 			}
@@ -2402,7 +2402,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1127.999987065792084, 30.0, 45.0, 22.0 ],
-					"text" : "adc~ 1"
+					"text" : "adc~ 2"
 				}
 
 			}
